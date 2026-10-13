@@ -392,3 +392,50 @@ body {
     height: 64px;
   }
 }
+
+
+/* Imágenes más visibles sin alterar el orden ni la estructura de la infografía. */
+.card-content-with-image {
+    grid-template-columns: minmax(0, 1fr) 116px;
+}
+
+.card-image {
+    width: 116px;
+    height: 116px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(16, 45, 70, 0.2);
+}
+
+.comparativa-box {
+    grid-template-columns: minmax(0, 1fr) 104px;
+}
+
+.comparativa-image {
+    width: 104px;
+    height: 104px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(16, 45, 70, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card-content-with-image {
+          grid-template-columns: minmax(0, 1fr) 88px;
+          gap: 10px;
+    }
+
+  .card-image {
+        width: 88px;
+        height: 88px;
+  }
+
+  .comparativa-box {
+        grid-template-columns: minmax(0, 1fr) 96px;
+  }
+
+  .comparativa-image {
+        width: 96px;
+        height: 96px;
+  }
+}
